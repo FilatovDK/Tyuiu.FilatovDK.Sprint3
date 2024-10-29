@@ -8,6 +8,7 @@ namespace Tyuiu.FilatovDK.Sprint3.Task5.V15.Test
         public void VaidGetSumSumSeries()
         {
             DataService ds = new DataService();
+
             int x = 5;
             int startValue1 = 1;
             int startValue2 = 1;
