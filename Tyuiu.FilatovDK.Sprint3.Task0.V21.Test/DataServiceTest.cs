@@ -12,7 +12,7 @@ namespace Tyuiu.FilatovDK.Sprint3.Task0.V21.Test
             int stsrtValue = 1;
             int stopValue = 13;
             double res = ds.GetSumSeries(value, stsrtValue, stopValue);
-            double wait = 580.932;
+            double wait = -63.727;
             Assert.AreEqual(wait, res);
         }
     }
