@@ -16,11 +16,12 @@ namespace Tyuiu.FilatovDK.Sprint3.Task5.V15
             int stopValue1 = 3;
             int startValue2 = 1;
             int stopValue2 = 10;
-            Console.WriteLine("переменная Х = " + x);
-            Console.WriteLine("Старт шага 1 = " + startValue1);
-            Console.WriteLine("Старт шага 1 = " + stopValue1);
-            Console.WriteLine("Старт шага 1 = " + startValue2);
-            Console.WriteLine("Старт шага 1 = " + stopValue2);
+
+            Console.WriteLine("Переменная X = " + x);
+            Console.WriteLine("Старт шага первой суммы ряда = " + startValue1);
+            Console.WriteLine("Конец шага первой суммы ряда = " + stopValue1);
+            Console.WriteLine("Старт шага второй суммы ряда = " + startValue2);
+            Console.WriteLine("Конец шага второй суммы ряда = " + stopValue2);
 
 
 
@@ -28,9 +29,10 @@ namespace Tyuiu.FilatovDK.Sprint3.Task5.V15
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            DataService DS = new DataService();
-            Console.WriteLine("Сумма = " + ds.GetSumSumSeries(x, startValue1, stopValue1, startValue2, stopValue2));
+            Console.WriteLine("Сумма ряда = " + ds.GetSumSumSeries(x, startValue1, startValue2, stopValue1, stopValue2));
+
             Console.ReadKey();
+
         }
     }
 }
