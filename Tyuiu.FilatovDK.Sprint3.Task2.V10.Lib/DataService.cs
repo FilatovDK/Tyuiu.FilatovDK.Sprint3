@@ -5,13 +5,15 @@ namespace Tyuiu.FilatovDK.Sprint3.Task2.V10.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double MultiplySeries = 0;
+            double t = Convert.ToDouble(value);
+            double i = Convert.ToDouble(startValue);
+            double res = 1;
             do
             {
-                MultiplySeries = MultiplySeries * (Math.Pow(value, startValue) + (1 / (startValue + 1)));
-                startValue++;
-            } while (startValue <= stopValue);
-            return Math.Round(MultiplySeries, 3);
+                res *= Math.Pow(t, i) + (1 / (i + 1));
+                i++;
+            } while (i <= 13);
+            return Math.Round(res, 3);
         }
     }
 }

@@ -8,11 +8,8 @@ namespace Tyuiu.FilatovDK.Sprint3.Task2.V10.Test
         public void ValidMultiplySeries()
         {
             DataService ds = new DataService();
-            int value = 1;
-            int startValue = 1;
-            int stopValue = 13;
-            double res = ds.GetMultiplySeries(value, startValue, stopValue);
-            double wait = 0;
+            double res = ds.GetMultiplySeries(1, 1, 13);
+            double wait = 7.5;
             Assert.AreEqual(wait, res);
         }
     }
