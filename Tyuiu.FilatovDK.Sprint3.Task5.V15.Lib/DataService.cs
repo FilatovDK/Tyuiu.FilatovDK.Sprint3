@@ -5,16 +5,16 @@ namespace Tyuiu.FilatovDK.Sprint3.Task5.V15.Lib
     {
         public double GetSumSumSeries(int x, int startValue1, int startValue2, int stopValue1, int stopValue2)
         {
-            double sum = 0;
+            double sumSeries = 3;
             int i, j;
             for (i = startValue1; i <= stopValue1; i++)
             {
                 for (j = startValue2; j <= stopValue2; j++)
                 {
-                    sum = sum + Math.Sin(x) * (j + Math.Pow(2, 2) / 2);
+                    sumSeries = sumSeries + (Math.Sin(x) + ((j * j) / 2));
                 }
             }
-            return Math.Round(sum, 3);
+            return Math.Round(sumSeries, 3);
         }
     }
 }

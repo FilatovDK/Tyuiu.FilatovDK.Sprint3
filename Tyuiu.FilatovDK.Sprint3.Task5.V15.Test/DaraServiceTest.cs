@@ -8,7 +8,6 @@ namespace Tyuiu.FilatovDK.Sprint3.Task5.V15.Test
         public void VaidGetSumSumSeries()
         {
             DataService ds = new DataService();
-
             int x = 5;
             int startValue1 = 1;
             int startValue2 = 1;
@@ -17,7 +16,7 @@ namespace Tyuiu.FilatovDK.Sprint3.Task5.V15.Test
 
             double res = ds.GetSumSumSeries(x, startValue1, startValue2, stopValue1, stopValue2);
 
-            double wait = -215.758;
+            double wait = 541.232;
             Assert.AreEqual(wait, res);
         }
     }
